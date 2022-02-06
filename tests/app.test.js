@@ -21,7 +21,18 @@ test("should have properties", () => {
   expect(app.book("Domino", "Jack Jackson")).toHaveProperty("author", "Jack Jackson");
 });
 
-test("should have properties", () => {
+test("num to string", () => {
   expect(app.NumToStr(5)).toBe("5");
+});
 
+test("count planets", () => {
+  expect(app.whichPlanet(7)).toBe("Uranus");
+});
+
+test("count students", () => {
+  expect(app.countStudents([true, false, true, true])).toBe(3);
+});
+
+test("define century", () => {
+  expect(app.century(1399)).toBe(13);
 });

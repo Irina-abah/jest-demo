@@ -36,4 +36,41 @@ const NumToStr = (num) => {
   return num.toString();
 }
 
- module.exports = { add, greeting, trueTask, book, NumToStr };
+// challenge 7
+
+const planets = [ "Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"];
+
+const whichPlanet = (num) => {
+  return planets[num-1]
+}
+
+// challenge 8
+
+const students = [true, true, true, false, true, true, true, true, false, true];
+
+const countStudents = (arr) => {
+  let present = [];
+
+  arr.forEach((i) => {
+    console.log(i)
+    if (i === true) {
+      present.push(i)
+    }
+  })
+  return present.length;
+}
+
+countStudents(students);
+
+// challenge 9
+
+// Square every digit and concatenate them (must return an integer)
+// (squareDigi(34) //will return 916) 
+
+// challenge 10 
+
+const century = (year) => {
+  return Math.floor(year / 100);
+};
+
+ module.exports = { add, greeting, trueTask, book, NumToStr, whichPlanet, countStudents, century };
